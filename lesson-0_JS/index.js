@@ -10,5 +10,17 @@ document.write('<input type="number" value=" ' + graduatesCount + ' ">');
 
 document.write('<input type="checkbox"', areYouChampion ? 'checked' : '', '>');
 
+let student = {
+	info: {
+		firstName: 'Ivan',
+		lastName: 'Ivanov'
+	},
+	address: {
+		country: 'France',
+		city: 'Paris',
+	}
+}
+
+document.write('<p>','firstname: ',student.info.firstName ,'</br>', 'lastname: ',student.info.lastName, '</p>');
 
 
