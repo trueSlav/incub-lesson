@@ -1,26 +1,19 @@
-let name = 'it-incubator';
+// data
+const title = 'it-incubator';
+const graduatesCount = 2000;
+const areYouChampion = true;
 
-let graduatesCount = 2000;
+// render
+let pageTitleElement = document.createElement('h1');
+pageTitleElement.innerText = title;
+document.body.append(pageTitleElement);
 
-let areYouChampion = false;
+let graduatesCountElement = document.createElement('input');
+graduatesCountElement.value = graduatesCount;
+document.body.append(graduatesCountElement);
 
-document.write('<h1>', name, '</h1>');
-
-document.write('<input type="number" value=" ' + graduatesCount + ' ">');
-
-document.write('<input type="checkbox"', areYouChampion ? 'checked' : '', '>');
-
-let student = {
-	info: {
-		firstName: 'Ivan',
-		lastName: 'Ivanov'
-	},
-	address: {
-		country: 'France',
-		city: 'Paris',
-	}
-}
-
-document.write('<p>','firstname: ',student.info.firstName ,'</br>', 'lastname: ',student.info.lastName, '</p>');
-
+let areYouChampionElement = document.createElement('input');
+areYouChampionElement.type = 'checkbox';
+areYouChampionElement.checked = areYouChampion;
+document.body.append(areYouChampionElement);
 
